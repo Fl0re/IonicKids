@@ -1,0 +1,28 @@
+<ion-content padding>
+  <h2>Register Here</h2>
+  <form (submit)="doSignup()">
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input [(ngModel)]="regData.email" name="email" type="text" placeholder="Your email" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Firstname</ion-label>
+      <ion-input [(ngModel)]="regData.firstname" name="firstname" type="text" placeholder="Your firstname" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Lastname</ion-label>
+      <ion-input [(ngModel)]="regData.lastname" name="lastname" type="text" placeholder="Your lastname" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input [(ngModel)]="regData.password" name="password" type="password" placeholder="Your password"></ion-input>
+    </ion-item>
+    <button ion-button block type="submit">
+      SignUp
+    </button>
+  </form>
+  <button ion-button block clear (click)="login()">
+    Have an account? Login Now
+  </button>
+
+</ion-content>
